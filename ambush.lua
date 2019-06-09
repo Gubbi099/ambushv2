@@ -791,8 +791,8 @@ ambush.Button("Fuck Map", tab1VisList, fuckMap, "Fucks the player(s) entire map 
 ambush.Button("Earthquake", tab1VisList, earthQuake, "Earthquake everyone.") 
 ambush.Button("Force Dance", tab1VisList, forceDance, "Makes everyone dance.") 
 ambush.Button("Fuck Bones", tab1VisList, fuckBones, "Fucks everyone's bones.") 
-ambush.Button("Spinning Heads", tab1VisList, spinningHeads, "Spins heads.") a
-mbush.Button("Open Doors", tab1VisList, openDoors, "Opens doors.") 
+ambush.Button("Spinning Heads", tab1VisList, spinningHeads, "Spins heads.") 
+ambush.Button("Open Doors", tab1VisList, openDoors, "Opens doors.") 
 ambush.Button("Lock Doors", tab1VisList, lockDoors, "Unlocks doors.") 
 ambush.Button("Unlock Doors", tab1VisList, unlockDoors, "Unlocks doors.") 
 ambush.Button("Remove Doors", tab1VisList, removeDoors, "Unlocks doors.") 
