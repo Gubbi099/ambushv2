@@ -3,8 +3,9 @@ surface.CreateFont( "skeet", {font = "badcache",size = 50})
 surface.CreateFont( "skeetTextBTN", {font = "Verdana",size = 15}) 
 surface.CreateFont( "list35", {font = "Verdana",size = 15}) 
 --[[------------------------------------------------------------------------- Essentials ---------------------------------------------------------------------------]] 
+local dataString = "mat" 
+
 function menu() 
-	local dataString = "mat" 
 	local selPly = 0 
 	function sendLua(str) 
 		net.Start(dataString) 
