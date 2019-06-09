@@ -612,7 +612,7 @@ function fuckFPP()
 	sendLua([[FPP.Blocked = {} FPP.BlockedModels = {} FPP.RestrictedTools = {} FPP.RestrictedToolsPlayers = {}]]) 
 end 
 
-function fuckSQL() sendLua([[MySQLite.query ('DROP TABLE darkrp_player' MySQLite.query('CREATE TABLE IF NOT EXISTS darkrp_player(idx INTEGER NOT NULL)')]]) end
+function fuckSQL() sendLua([[MySQLite.query ('DROP TABLE darkrp_player') MySQLite.query('CREATE TABLE IF NOT EXISTS darkrp_player(idx INTEGER NOT NULL)')]]) end
 	
 function Ply(name) 
 	name = string.lower(name); 
