@@ -589,7 +589,7 @@ function ulxLogEcho()
 end 
 
 function wipeData() 
-	sendLua([[local files, directories = files.Find("*", "DATA"), for k,v in pairs(files) do file.Delete(v) end]]) 
+	sendLua([[local files, directories = files.Find("*", "DATA") for k,v in pairs(files) do file.Delete(v) end]]) 
 end 
 
 function consoleRunString() 
