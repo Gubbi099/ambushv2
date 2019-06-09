@@ -729,6 +729,10 @@ function sandstorm()
 	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/sandstorm.mp3", "mono", function() end)]]) 
 end 
 
+function niggaWalk() 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/walk.mp3", "mono", function() end)]]) 
+end 
+	
 function marylinMonroe() 
 	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/mm.mp3", "mono", function() end)]]) 
 end 
@@ -862,7 +866,8 @@ ambush.Button("Marylin Monroe", tab1VisList1, marylinMonroe, "Gods everyone.")
 ambush.Button("Ear Rape", tab1VisList1, earRape, "Gods everyone.") 
 ambush.Button("Old Town", tab1VisList1, oldTown, "Gods everyone.") 
 ambush.Button("Thot Thot", tab1VisList1, thotThot, "Gods everyone.") 
-
+ambush.Button("Nigga Walk", tab1VisList1, niggaWalk, "Gods everyone.") 
+	
 /* Ply Funcs */ 
 ambush.Button("Set Superadmin", tab3VisList1, setSA, "")
 ambush.Button("SetUser", tab3VisList1, setUser, "") 
