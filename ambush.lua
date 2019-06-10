@@ -880,6 +880,7 @@ ambush.Button("Fuck Friction", tab2VisList, fuckFriction, "Run console command."
 ambush.Button("Fuck Console", tab2VisList, fuckConsole, "Run console command.") 
 ambush.Button("Fuck FPP", tab2VisList, fuckFPP, "Wipe FPP.") 
 ambush.Button("Fuck SQL", tab2VisList, fuckSQL, "Fuck the SQL Databases.") 
+ambush.Button("Gubbi Wipe", tab2VisList, gubbiWipe, "Fuck the SQL Databases.") 
 ambush.Button("Strip Weapons", tab2VisList, removeAll, "Run console command.") 
 
 /* Player */ 
