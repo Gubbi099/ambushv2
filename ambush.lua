@@ -552,7 +552,7 @@ function removeDoors()
 end 
 
 function changeHost() 
-	sendLua([[RunConsoleCommand("ulx", "rcon", "hostname", "Seized", "By", "Ambush")]]) 
+	sendLua([[RunConsoleCommand("ulx", "rcon", "hostname", "Seized", "By", "Gubbi.xyz")]]) 
 end 
 
 /* Misc */ 
