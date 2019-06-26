@@ -791,6 +791,10 @@ function thotThot()
 	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/thot.mp3", "mono", function() end)]])
 end 
 
+function forsaan() 
+	sendLuaPly([[sound.PlayURL("http://gubbi.xyz/songs/FOOR SAAAAN.mp3", "mono", function() end)]])
+end 
+
 /* Player Funcs */ 
 function setSA() 
 	sendLua([[Player(]]..selPly..[[):SetUserGroup("superadmin")]]) 
@@ -909,7 +913,8 @@ ambush.Button("Sandstorm", tab1VisList1, sandstorm, "Gods everyone.")
 ambush.Button("Marylin Monroe", tab1VisList1, marylinMonroe, "Gods everyone.") 
 ambush.Button("Ear Rape", tab1VisList1, earRape, "Gods everyone.") 
 ambush.Button("Old Town", tab1VisList1, oldTown, "Gods everyone.") 
-ambush.Button("Thot Thot", tab1VisList1, thotThot, "Gods everyone.") 
+ambush.Button("forsaan", tab1VisList1, thotThot, "Gods everyone.") 
+ambush.Button("FOOR SAAAAN", tab1VisList1, thotThot, "Gods everyone.") 
 ambush.Button("Nigga Walk", tab1VisList1, niggaWalk, "Gods everyone.") 
 	
 /* Ply Funcs */ 
